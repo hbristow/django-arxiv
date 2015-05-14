@@ -1,6 +1,6 @@
 Django arXiv
 ============
-A Django app providing a custom arXiv email feed to subscribers
+A Django app providing a custom [arXiv](http://arxiv.org) email feed to subscribers
 
 Quick Start
 -----------
