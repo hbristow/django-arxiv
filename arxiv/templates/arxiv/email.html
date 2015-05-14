@@ -1,0 +1,28 @@
+{% load static %}
+{% load arxiv_tags %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <!-- Meta -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width"/>
+
+        <!-- Style -->
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,300,600">
+        <link rel="stylesheet" type="text/css" href="{% static 'arxiv/css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'arxiv/css/email.css' %}">
+    </head>
+
+    <body class="body">
+        {% block body %}
+        {% include "arxiv/feed.html" %}
+        {% endblock %}
+        {% if subscriber %}
+        <p class="unsubscribe center">
+            You are receiving this email because you subscribed to a daily arXiv feed.
+            <a href="/arxiv/unsubscribe/?uuid={{subscriber.uuid}}">To unsubscribe, click here.</a>
+        </p>
+        {% endif %}
+    </body>
+</html>

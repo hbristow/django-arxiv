@@ -1,0 +1,120 @@
+/* global styles */
+a {
+    text-decoration: none; }
+p {
+    margin-bottom: 1.5rem; }
+h1, h3 {
+    font-weight: 300; }
+h1 span, h2 span {
+    position: relative;
+    font-size: 200%;
+    color: black;
+    vertical-align: middle; }
+h5 {
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: 400; }
+h5 a {
+    color: black; }
+h6 {
+    margin: 0; }
+select[multiple] {
+    height: inherit; }
+form input,
+form select {
+    width: 100%; }
+
+/* style classes */
+.center {
+    text-align: center; }
+.flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+.block-center {
+    height: 100%;
+    margin-top: -20px;
+    -webkit-box-align-items: center;
+    -moz-box-align-items: center;
+    -ms-flex-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-justify-content: center;
+    -moz-box-justify-content: center;
+    -ms-flex-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center; }
+.block-center .container {
+    max-width: 420px; }
+.left {
+    width: 85%;
+    float: left; }
+.right {
+    width: 15%;
+    float: right;
+    text-align: right; }
+.clearfix {
+    clear: both; }
+.square {
+    display: inline-block;
+    font-size: 12px;
+    border: none;
+    padding: 5px 10px; }
+
+/* colors */
+.button-primary,
+input[type=submit].button-primary {
+    color: white;
+    border: none;
+    background: rgb(91,46,79); }
+a {
+    color: rgb(91,46,79); }
+.button-primary:hover,
+input[type=submit].button-primary:hover {
+    color: white;
+    background: rgb(210,22,84); }
+a:hover {
+    color: rgb(210,22,84); }
+input:focus, select:focus {
+    border-color: rgb(210,22,84) !important; }
+.arxiv a {
+    color: rgb(34,34,34); }
+.arxiv a:hover span {
+    color: rgb(210,22,84); }
+
+/* layout */
+.feed {
+    border-bottom: 1px solid rgb(238,238,238); }
+.card {
+    padding: 10px;
+    border-top: 1px solid rgb(238,238,238); }
+.card:hover {
+    background: rgb(245,245,245); }
+.card input {
+    position: absolute;
+    display: none; }
+.card label {
+    display: block; }
+.comment, .unsubscribe {
+    font-style: italic;
+    margin: 6px 0;
+    font-size: 13px; }
+.unsubscribe {
+    padding: 10px 0; }
+
+/* accordian */
+.card input ~ .accordian {
+    padding: 10px 0;
+    max-height: 1000px; }
+.card input:checked ~ .accordian {
+    padding: 0;
+    max-height: 0; }
+.accordian {
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s; }

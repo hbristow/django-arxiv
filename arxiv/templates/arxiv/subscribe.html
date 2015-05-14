@@ -1,0 +1,30 @@
+{% extends "arxiv/base.html" %}
+{% load static %}
+{% load arxiv_tags %}
+
+{% block body %}
+<div class="block-center flex">
+    <div class="container">
+        <h1 class="center arxiv"><a href="http://arxiv.org">ar<span>X</span>iv</a></h1>
+        <p>Keep up with the latest papers on arXiv by subscribing to a personalized email feed.
+        You'll receive an email every day in an easy to read format, from the subject areas
+        you choose.</p>
+        <form action="/arxiv/subscribe/" method="post">{% csrf_token %}
+            {{ form.non_field_errors }}
+            <label for="{{ form.email.id_for_label }}">Your Email</label>
+            {{ form.email }}
+            <label for="{{ form.subjects.id_for_label }}">Subject Areas</label>
+            {{ form.subjects }}
+            <label for="{{ form.timezone.id_for_label }}">Time Zone</label>
+            <div class="row">
+                <div class="eight columns">
+                    {{ form.timezone }}
+                </div>
+                <div class="four columns">
+                    <input class="button-primary" type="submit" value="Subscribe" id="submit">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

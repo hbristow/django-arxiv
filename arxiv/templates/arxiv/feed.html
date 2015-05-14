@@ -1,0 +1,38 @@
+{% load arxiv_tags %}
+
+<!-- arXiv Feed -->
+<div class="feed container">
+    <h1 class="center arxiv"><a href="http://arxiv.org">ar<span>X</span>iv</a></h1>
+
+    {% for card in feed %}
+    <!-- Entry -->
+    <div class="card">
+
+        <!-- Summary -->
+        <input id="ac-{{ forloop.counter }}" type="checkbox" checked>
+        <label for="ac-{{ forloop.counter }}">
+            <div class="left">
+                <h5 class="title"><a href="{{card.url}}">{{card.title}}</a></h5>
+                <h6 class="authors">{{ card.authors | stringify }}</h6>
+            </div>
+            <div class="right">
+                <div class="pdf"><a class="square button-primary" href="{{card.pdf}}">PDF</a></div>
+            </div>
+            <div class="clearfix"></div>
+        </label>
+
+        <!-- Accordian content -->
+        <div class="accordian">
+            <p class="abstract">{{card.abstract}}</p>
+            {% if card.comment %}
+            <div class="comment">Comments: {{ card.comment }}</div>
+            {% endif %}
+            <div class="categories">
+                {% for category in card.categories %}
+                <div class="square button-primary">{{ category }}</div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

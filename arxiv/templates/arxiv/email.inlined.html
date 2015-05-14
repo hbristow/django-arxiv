@@ -1,0 +1,97 @@
+{% load static %}
+{% load arxiv_tags %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <!-- Meta -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- Style -->
+        
+        
+        
+    </head>
+
+    <body style="font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif"><style type="text/css">
+.button-primary:hover {
+color: white; background: rgb(210,22,84);
+}
+input[type=submit].button-primary:hover {
+color: white; background: rgb(210,22,84);
+}
+a:hover {
+color: rgb(210,22,84);
+}
+input:focus {
+border-color: rgb(210,22,84) !important;
+}
+select:focus {
+border-color: rgb(210,22,84) !important;
+}
+.arxiv a:hover span {
+color: rgb(210,22,84);
+}
+.card:hover {
+background: rgb(245,245,245);
+}
+body {
+font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
+}
+@font-face {
+font-family: 'Raleway'; font-style: normal; font-weight: 300; src: local('Raleway Light'), local('Raleway-Light'), url('https://fonts.gstatic.com/s/raleway/v9/-_Ctzj9b56b8RgXW8FAriS3USBnSvpkopQaUR-2r7iU.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Raleway'; font-style: normal; font-weight: 400; src: local('Raleway'), url('https://fonts.gstatic.com/s/raleway/v9/bIcY3_3JNqUVRAQQRNVteQ.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Raleway'; font-style: normal; font-weight: 600; src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url('https://fonts.gstatic.com/s/raleway/v9/xkvoNo9fC8O2RDydKj12by3USBnSvpkopQaUR-2r7iU.ttf') format('truetype');
+}
+</style>
+        {% block body %}
+
+<!-- arXiv Feed -->
+<div style="border-bottom-color: rgb(238,238,238); border-bottom-style: solid; border-bottom-width: 1px; margin: 0 auto; max-width: 900px; width: 95%">
+    <h1 style="font-weight: 300; text-align: center" align="center"><a href="http://arxiv.org" style="color: rgb(34,34,34); text-decoration: none">ar<span style="color: black; font-size: 200%; position: relative; vertical-align: middle">X</span>iv</a></h1>
+
+    {% for card in feed %}
+    <!-- Entry -->
+    <div style="border-top-color: rgb(238,238,238); border-top-style: solid; border-top-width: 1px; padding: 10px">
+
+        <!-- Summary -->
+        <input id="ac-{{ forloop.counter }}" type="checkbox" checked="checked" style="display: none; position: absolute" />
+        <label for="ac-{{ forloop.counter }}" style="display: block">
+            <div style="float: left; width: 85%">
+                <h5 style="font-size: 16px; font-weight: 400; line-height: 1.6; margin: 0"><a href="{{card.url}}" style="color: black; text-decoration: none">{{card.title}}</a></h5>
+                <h6 style="font-size: 15px; font-weight: 300; line-height: 1.4; margin: 0">{{ card.authors | stringify }}</h6>
+            </div>
+            <div style="float: right; text-align: right; width: 15%" align="right">
+                <div><a href="{{card.pdf}}" style="background: rgb(91,46,79); border: none; color: white; display: inline-block; font-size: 12px; padding: 5px 10px; text-decoration: none">PDF</a></div>
+            </div>
+            <div style="clear: both"></div>
+        </label>
+
+        <!-- Accordian content -->
+        <div style="-moz-transition: all 0.5s; -ms-transition: all 0.5s; -o-transition: all 0.5s; -webkit-transition: all 0.5s; max-height: 1000px; overflow: hidden; padding: 10px 0; transition: all 0.5s">
+            <p style="font-size: 14px; line-height: 1.6; margin: 0 0 6px">{{card.abstract}}</p>
+            {% if card.comment %}
+            <div style="font-size: 13px; font-style: italic; margin: 6px 0">Comments: {{ card.comment }}</div>
+            {% endif %}
+            <div>
+                {% for category in card.categories %}
+                <div style="background: rgb(91,46,79); border: none; color: white; display: inline-block; font-size: 12px; padding: 5px 10px">{{ category }}</div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+        {% endblock %}
+        <p style="font-size: 13px; font-style: italic; line-height: 1.6; margin: 0 auto; max-width: 900px; padding: 10px 0; text-align: center; width: 95%" align="center">
+            You are receiving this email because you subscribed to a daily arXiv feed.
+            <a href="/arxiv/unsubscribe/?uuid={{subscriber.uuid}}" style="color: rgb(91,46,79); text-decoration: none">To unsubscribe, click here.</a>
+        </p>
+    </body>
+</html>

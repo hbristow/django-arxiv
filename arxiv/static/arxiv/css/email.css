@@ -1,0 +1,21 @@
+body {
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif; }
+h1 {
+    font-weight: 300; }
+h5 {
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 16px; }
+h6 {
+    font-weight: 300;
+    line-height: 1.4;
+    font-size: 15px; }
+p {
+    margin: 0 0 6px 0;
+    font-size: 14px;
+    line-height: 1.6; }
+
+.container, .unsubscribe {
+    width: 95%;
+    max-width: 900px;
+    margin: 0 auto; }
