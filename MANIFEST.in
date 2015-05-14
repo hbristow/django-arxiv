@@ -1,0 +1,4 @@
+include LICENCE
+include README.md
+recursive-include arxiv/static *
+recursive-include arxiv/templates *
