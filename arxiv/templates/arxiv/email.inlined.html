@@ -89,9 +89,11 @@ font-family: 'Raleway'; font-style: normal; font-weight: 600; src: local('Ralewa
 </div>
 
         {% endblock %}
+        {% if subscriber %}
         <p style="font-size: 13px; font-style: italic; line-height: 1.6; margin: 0 auto; max-width: 900px; padding: 10px 0; text-align: center; width: 95%" align="center">
             You are receiving this email because you subscribed to a daily arXiv feed.
             <a href="/arxiv/unsubscribe/?uuid={{subscriber.uuid}}" style="color: rgb(91,46,79); text-decoration: none">To unsubscribe, click here.</a>
         </p>
+        {% endif %}
     </body>
 </html>

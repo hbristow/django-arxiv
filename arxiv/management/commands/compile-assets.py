@@ -1,21 +1,20 @@
+from django.core.management.base import BaseCommand, CommandError
+from django.template import loader, Context
 import os
 import re
 import subprocess
-from django.core.management.base import BaseCommand, CommandError
-from django.template import loader, Context
-import arxiv
-
 
 def read(filename):
     """Read the contents of a file into a string"""
     with open(filename) as f:
         return f.read()
 
-
 class Command(BaseCommand):
     help = 'Inline the arXiv email template components'
 
     def handle(self, *args, **kwargs):
+        import arxiv
+
         # load the template resources
         module = os.path.dirname(os.path.realpath(arxiv.__file__))
         base = read(os.path.join(module, 'templates/arxiv/email.html'))
