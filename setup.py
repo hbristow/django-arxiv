@@ -14,9 +14,22 @@ setup(
     packages = [
         'arxiv'
     ],
+    include_package_data = True,
     setup_requires = [
         'django >= 1.7',
         'django-solo',
         'celery'
+    ],
+    classifiers = [
+        'Environment :: Web Environment',
+        'Framework :: Django',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: BSD License',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.3',
+        'Topic :: Internet :: WWW/HTTP',
+        'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
     zip_safe = False)
