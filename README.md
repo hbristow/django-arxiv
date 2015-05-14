@@ -11,7 +11,7 @@ Quick Start
     pip install git+https://github.com/hbristow/django-arxiv
     ```
 
-2. Add `arxiv` and `solo` to your INSTALLED_APPS setting:
+2. Add `arxiv` and `solo` to your `INSTALLED_APPS` setting:
 
     ```python
     INSTALLED_APPS = (
@@ -38,6 +38,10 @@ Quick Start
     ```bash
     celery -A project-name beat
     ```
+
+   Celery may ask you about setting up a task queue broker. See the
+   [Celery documentation](http://docs.celeryproject.org/en/latest/getting-started/brokers/)
+   for which broker will best suit your needs.
 
 ### Subscribe View
 ![Subscribe view](docs/subscribe.png)
