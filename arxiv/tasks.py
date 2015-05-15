@@ -5,7 +5,7 @@ from celery.schedules import crontab
 import celery
 import collections
 
-from arxiv import feed, models
+from arxiv import feed, models, time
 
 CELERYBEAT_SCHEDULE = {
     # Executes on weekdays every 30 minutes (timezones are spaced 30 minutes apart)
@@ -15,6 +15,7 @@ CELERYBEAT_SCHEDULE = {
     }
 }
 
+
 @celery.task
 def email_subscribers():
     """Email subscribers with a daily digest of their subject areas"""
@@ -22,6 +23,11 @@ def email_subscribers():
 
     # get the timezones which need updating
     timezones = models.Subscriber.objects.values_list('timezone', flat=True).distinct()
+    timezones = [zone for zone in timezones if time.satisfies(time.now(zone),
+        weekday = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        hour = [07],
+        minute = [0]
+    )]
 
     # get all subscribers in the timezones that need notifying
     subscribers = models.Subscriber.objects.filter(timezone__in=timezones).prefetch_related('subjects')

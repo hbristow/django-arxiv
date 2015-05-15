@@ -10,7 +10,7 @@ def read(filename):
         return f.read()
 
 class Command(BaseCommand):
-    help = 'Inline the arXiv email template components'
+    """Inline the arXiv email template components"""
 
     def handle(self, *args, **kwargs):
         import arxiv
