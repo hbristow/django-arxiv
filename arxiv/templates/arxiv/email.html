@@ -12,6 +12,7 @@
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,300,600">
         <link rel="stylesheet" type="text/css" href="{% static 'arxiv/css/style.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'arxiv/css/email.css' %}">
+
     </head>
 
     <body class="body">
@@ -24,5 +25,20 @@
             <a href="/arxiv/unsubscribe/?uuid={{subscriber.uuid}}">To unsubscribe, click here.</a>
         </p>
         {% endif %}
+
+        <!-- MathJax -->
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {
+                    inlineMath: [['$','$']],
+                    processEscapes: true
+                },
+                "HTML-CSS": {
+                    availableFonts: ["Latin-Modern", "TeX"],
+                    webFont: "Latin-Modern"
+                }
+            });
+        </script>
     </body>
 </html>
