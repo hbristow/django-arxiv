@@ -29,6 +29,17 @@
 .chosen-container a {
   cursor: pointer;
 }
+.chosen-container .search-choice-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 11px 10px;
+  display: block;
+  height: 10px;
+  width: 10px;
+  background-color: #999;
+  border-radius: 50%;
+}
 .chosen-container .search-choice .group-name, .chosen-container .chosen-single .group-name {
   margin-right: 4px;
   overflow: hidden;
@@ -143,7 +154,7 @@
 .chosen-container-multi .chosen-choices li.search-choice {
   position: relative;
   margin: 5px 5px 0px 0;
-  padding: 3px 10px;
+  padding: 3px 20px 3px 10px;
   width: 100%;
   border-radius: 3px;
   background-color: #eeeeee;
