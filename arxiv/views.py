@@ -55,5 +55,4 @@ def latest(request):
     # render the feed
     return render(request, 'arxiv/email.html', {
         'feed': feed.today(*subjects),
-        'subscriber': subscriber
     })
