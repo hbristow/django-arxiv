@@ -1,4 +1,5 @@
 import uuid
+import pytz
 from solo.models import SingletonModel
 from django.core import mail
 from django.core.mail.backends import smtp
@@ -36,14 +37,6 @@ class MailServer(SingletonModel):
 # ----------------------------------------------------------------------------
 # Subscribers
 # ----------------------------------------------------------------------------
-class Timezone(models.Model):
-    """Representation of a timezone"""
-    region = models.CharField('Region', max_length=64)
-
-    def __unicode__(self):
-        """Describe the timezone by its region name"""
-        return self.region
-
 class Subject(models.Model):
     """Representation of a subject area"""
     name = models.CharField('Name', max_length=128)
@@ -57,7 +50,8 @@ class Subscriber(models.Model):
     """Feed subscriber"""
     email = models.EmailField('Email Address', max_length=128)
     uuid = models.CharField('Universal Identifier', max_length=32, editable=False, blank=True)
-    timezone = models.ForeignKey(Timezone)
+    timezone = models.CharField('Timezone', max_length=64,
+        choices=((timezone,timezone) for timezone in pytz.all_timezones))
     subjects = models.ManyToManyField(Subject)
 
     def save(self, *args, **kwargs):

@@ -4,7 +4,6 @@ from django.db import models, migrations
 from django.core.management import call_command
 
 def load_fixtures(*args):
-    call_command('loaddata', 'timezones.json', app='arxiv')
     call_command('loaddata', 'subjects.json', app='arxiv')
 
 class Migration(migrations.Migration):

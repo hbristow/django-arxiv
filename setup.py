@@ -18,7 +18,8 @@ setup(
     setup_requires = [
         'django >= 1.7',
         'django-solo',
-        'celery'
+        'celery',
+        'pytz'
     ],
     classifiers = [
         'Environment :: Web Environment',

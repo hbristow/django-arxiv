@@ -1,1018 +1,994 @@
 [
-  {
-    "model": "arxiv.Subject",
-    "pk": "433",
-    "fields": {
-      "name": "Statistics - Applications",
-      "cat": "stat.AP"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "434",
-    "fields": {
-      "name": "Statistics - Computation",
-      "cat": "stat.CO"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "435",
-    "fields": {
-      "name": "Statistics - Machine Learning",
-      "cat": "stat.ML"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "436",
-    "fields": {
-      "name": "Statistics - Methodology",
-      "cat": "stat.ME"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "437",
-    "fields": {
-      "name": "Statistics - Theory",
-      "cat": "stat.TH"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "438",
-    "fields": {
-      "name": "Quantitative Biology - Biomolecules",
-      "cat": "q-bio.BM"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "439",
-    "fields": {
-      "name": "Quantitative Biology - Cell Behavior",
-      "cat": "q-bio.CB"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "440",
-    "fields": {
-      "name": "Quantitative Biology - Genomics",
-      "cat": "q-bio.GN"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "441",
-    "fields": {
-      "name": "Quantitative Biology - Molecular Networks",
-      "cat": "q-bio.MN"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "442",
-    "fields": {
-      "name": "Quantitative Biology - Neurons and Cognition",
-      "cat": "q-bio.NC"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "443",
-    "fields": {
-      "name": "Quantitative Biology - Other",
-      "cat": "q-bio.OT"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "444",
-    "fields": {
-      "name": "Quantitative Biology - Populations and Evolution",
-      "cat": "q-bio.PE"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "445",
-    "fields": {
-      "name": "Quantitative Biology - Quantitative Methods",
-      "cat": "q-bio.QM"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "446",
-    "fields": {
-      "name": "Quantitative Biology - Subcellular Processes",
-      "cat": "q-bio.SC"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "447",
-    "fields": {
-      "name": "Quantitative Biology - Tissues and Organs",
-      "cat": "q-bio.TO"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "448",
-    "fields": {
-      "name": "Computer Science - Architecture",
-      "cat": "cs.AR"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "449",
-    "fields": {
-      "name": "Computer Science - Artificial Intelligence",
-      "cat": "cs.AI"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "450",
-    "fields": {
-      "name": "Computer Science - Computation and Language",
-      "cat": "cs.CL"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "451",
-    "fields": {
-      "name": "Computer Science - Computational Complexity",
-      "cat": "cs.CC"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "452",
-    "fields": {
-      "name": "Computer Science - Computational Engineering; Finance; and Science",
-      "cat": "cs.CE"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "453",
-    "fields": {
-      "name": "Computer Science - Computational Geometry",
-      "cat": "cs.CG"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "454",
-    "fields": {
-      "name": "Computer Science - Computer Science and Game Theory",
-      "cat": "cs.GT"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "455",
-    "fields": {
-      "name": "Computer Science - Computer Vision and Pattern Recognition",
-      "cat": "cs.CV"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "456",
-    "fields": {
-      "name": "Computer Science - Computers and Society",
-      "cat": "cs.CY"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "457",
-    "fields": {
-      "name": "Computer Science - Cryptography and Security",
-      "cat": "cs.CR"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "458",
-    "fields": {
-      "name": "Computer Science - Data Structures and Algorithms",
-      "cat": "cs.DS"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "459",
-    "fields": {
-      "name": "Computer Science - Databases",
-      "cat": "cs.DB"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "460",
-    "fields": {
-      "name": "Computer Science - Digital Libraries",
-      "cat": "cs.DL"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "461",
-    "fields": {
-      "name": "Computer Science - Discrete Mathematics",
-      "cat": "cs.DM"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "462",
-    "fields": {
-      "name": "Computer Science - Distributed; Parallel; and Cluster Computing",
-      "cat": "cs.DC"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "463",
-    "fields": {
-      "name": "Computer Science - General Literature",
-      "cat": "cs.GL"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "464",
-    "fields": {
-      "name": "Computer Science - Graphics",
-      "cat": "cs.GR"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "465",
-    "fields": {
-      "name": "Computer Science - Human-Computer Interaction",
-      "cat": "cs.HC"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "466",
-    "fields": {
-      "name": "Computer Science - Information Retrieval",
-      "cat": "cs.IR"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "467",
-    "fields": {
-      "name": "Computer Science - Information Theory",
-      "cat": "cs.IT"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "468",
-    "fields": {
-      "name": "Computer Science - Learning",
-      "cat": "cs.LG"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "469",
-    "fields": {
-      "name": "Computer Science - Logic in Computer Science",
-      "cat": "cs.LO"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "470",
-    "fields": {
-      "name": "Computer Science - Mathematical Software",
-      "cat": "cs.MS"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "471",
-    "fields": {
-      "name": "Computer Science - Multiagent Systems",
-      "cat": "cs.MA"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "472",
-    "fields": {
-      "name": "Computer Science - Multimedia",
-      "cat": "cs.MM"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "473",
-    "fields": {
-      "name": "Computer Science - Networking and Internet Architecture",
-      "cat": "cs.NI"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "474",
-    "fields": {
-      "name": "Computer Science - Neural and Evolutionary Computing",
-      "cat": "cs.NE"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "475",
-    "fields": {
-      "name": "Computer Science - Numerical Analysis",
-      "cat": "cs.NA"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "476",
-    "fields": {
-      "name": "Computer Science - Operating Systems",
-      "cat": "cs.OS"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "477",
-    "fields": {
-      "name": "Computer Science - Other",
-      "cat": "cs.OH"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "478",
-    "fields": {
-      "name": "Computer Science - Performance",
-      "cat": "cs.PF"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "479",
-    "fields": {
-      "name": "Computer Science - Programming Languages",
-      "cat": "cs.PL"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "480",
-    "fields": {
-      "name": "Computer Science - Robotics",
-      "cat": "cs.RO"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "481",
-    "fields": {
-      "name": "Computer Science - Software Engineering",
-      "cat": "cs.SE"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "482",
-    "fields": {
-      "name": "Computer Science - Sound",
-      "cat": "cs.SD"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "483",
-    "fields": {
-      "name": "Computer Science - Symbolic Computation",
-      "cat": "cs.SC"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "484",
-    "fields": {
-      "name": "Nonlinear Sciences - Adaptation and Self-Organizing Systems",
-      "cat": "nlin.AO"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "485",
-    "fields": {
-      "name": "Nonlinear Sciences - Cellular Automata and Lattice Gases",
-      "cat": "nlin.CG"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "486",
-    "fields": {
-      "name": "Nonlinear Sciences - Chaotic Dynamics",
-      "cat": "nlin.CD"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "487",
-    "fields": {
-      "name": "Nonlinear Sciences - Exactly Solvable and Integrable Systems",
-      "cat": "nlin.SI"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "488",
-    "fields": {
-      "name": "Nonlinear Sciences - Pattern Formation and Solitons",
-      "cat": "nlin.PS"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "489",
-    "fields": {
-      "name": "Mathematics - Algebraic Geometry",
-      "cat": "math.AG"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "490",
-    "fields": {
-      "name": "Mathematics - Algebraic Topology",
-      "cat": "math.AT"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "491",
-    "fields": {
-      "name": "Mathematics - Analysis of PDEs",
-      "cat": "math.AP"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "492",
-    "fields": {
-      "name": "Mathematics - Category Theory",
-      "cat": "math.CT"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "493",
-    "fields": {
-      "name": "Mathematics - Classical Analysis and ODEs",
-      "cat": "math.CA"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "494",
-    "fields": {
-      "name": "Mathematics - Combinatorics",
-      "cat": "math.CO"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "495",
-    "fields": {
-      "name": "Mathematics - Commutative Algebra",
-      "cat": "math.AC"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "496",
-    "fields": {
-      "name": "Mathematics - Complex Variables",
-      "cat": "math.CV"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "497",
-    "fields": {
-      "name": "Mathematics - Differential Geometry",
-      "cat": "math.DG"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "498",
-    "fields": {
-      "name": "Mathematics - Dynamical Systems",
-      "cat": "math.DS"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "499",
-    "fields": {
-      "name": "Mathematics - Functional Analysis",
-      "cat": "math.FA"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "500",
-    "fields": {
-      "name": "Mathematics - General Mathematics",
-      "cat": "math.GM"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "501",
-    "fields": {
-      "name": "Mathematics - General Topology",
-      "cat": "math.GN"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "502",
-    "fields": {
-      "name": "Mathematics - Geometric Topology",
-      "cat": "math.GT"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "503",
-    "fields": {
-      "name": "Mathematics - Group Theory",
-      "cat": "math.GR"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "504",
-    "fields": {
-      "name": "Mathematics - History and Overview",
-      "cat": "math.HO"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "505",
-    "fields": {
-      "name": "Mathematics - Information Theory",
-      "cat": "math.IT"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "506",
-    "fields": {
-      "name": "Mathematics - K-Theory and Homology",
-      "cat": "math.KT"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "507",
-    "fields": {
-      "name": "Mathematics - Logic",
-      "cat": "math.LO"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "508",
-    "fields": {
-      "name": "Mathematics - Mathematical Physics",
-      "cat": "math.MP"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "509",
-    "fields": {
-      "name": "Mathematics - Metric Geometry",
-      "cat": "math.MG"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "510",
-    "fields": {
-      "name": "Mathematics - Number Theory",
-      "cat": "math.NT"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "511",
-    "fields": {
-      "name": "Mathematics - Numerical Analysis",
-      "cat": "math.NA"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "512",
-    "fields": {
-      "name": "Mathematics - Operator Algebras",
-      "cat": "math.OA"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "513",
-    "fields": {
-      "name": "Mathematics - Optimization and Control",
-      "cat": "math.OC"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "514",
-    "fields": {
-      "name": "Mathematics - Probability",
-      "cat": "math.PR"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "515",
-    "fields": {
-      "name": "Mathematics - Quantum Algebra",
-      "cat": "math.QA"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "516",
-    "fields": {
-      "name": "Mathematics - Representation Theory",
-      "cat": "math.RT"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "517",
-    "fields": {
-      "name": "Mathematics - Rings and Algebras",
-      "cat": "math.RA"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "518",
-    "fields": {
-      "name": "Mathematics - Spectral Theory",
-      "cat": "math.SP"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "519",
-    "fields": {
-      "name": "Mathematics - Statistics",
-      "cat": "math.ST"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "520",
-    "fields": {
-      "name": "Mathematics - Symplectic Geometry",
-      "cat": "math.SG"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "521",
-    "fields": {
-      "name": "Astrophysics",
-      "cat": "astro-ph"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "522",
-    "fields": {
-      "name": "Physics - Disordered Systems and Neural Networks",
-      "cat": "cond-mat.dis-nn"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "523",
-    "fields": {
-      "name": "Physics - Mesoscopic Systems and Quantum Hall Effect",
-      "cat": "cond-mat.mes-hall"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "524",
-    "fields": {
-      "name": "Physics - Materials Science",
-      "cat": "cond-mat.mtrl-sci"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "525",
-    "fields": {
-      "name": "Physics - Other",
-      "cat": "cond-mat.other"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "526",
-    "fields": {
-      "name": "Physics - Soft Condensed Matter",
-      "cat": "cond-mat.soft"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "527",
-    "fields": {
-      "name": "Physics - Statistical Mechanics",
-      "cat": "cond-mat.stat-mech"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "528",
-    "fields": {
-      "name": "Physics - Strongly Correlated Electrons",
-      "cat": "cond-mat.str-el"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "529",
-    "fields": {
-      "name": "Physics - Superconductivity",
-      "cat": "cond-mat.supr-con"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "530",
-    "fields": {
-      "name": "General Relativity and Quantum Cosmology",
-      "cat": "gr-qc"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "531",
-    "fields": {
-      "name": "High Energy Physics - Experiment",
-      "cat": "hep-ex"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "532",
-    "fields": {
-      "name": "High Energy Physics - Lattice",
-      "cat": "hep-lat"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "533",
-    "fields": {
-      "name": "High Energy Physics - Phenomenology",
-      "cat": "hep-ph"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "534",
-    "fields": {
-      "name": "High Energy Physics - Theory",
-      "cat": "hep-th"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "535",
-    "fields": {
-      "name": "Mathematical Physics",
-      "cat": "math-ph"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "536",
-    "fields": {
-      "name": "Nuclear Experiment",
-      "cat": "nucl-ex"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "537",
-    "fields": {
-      "name": "Nuclear Theory",
-      "cat": "nucl-th"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "538",
-    "fields": {
-      "name": "Physics - Accelerator Physics",
-      "cat": "physics.acc-ph"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "539",
-    "fields": {
-      "name": "Physics - Atmospheric and Oceanic Physics",
-      "cat": "physics.ao-ph"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "540",
-    "fields": {
-      "name": "Physics - Atomic Physics",
-      "cat": "physics.atom-ph"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "541",
-    "fields": {
-      "name": "Physics - Atomic and Molecular Clusters",
-      "cat": "physics.atm-clus"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "542",
-    "fields": {
-      "name": "Physics - Biological Physics",
-      "cat": "physics.bio-ph"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "543",
-    "fields": {
-      "name": "Physics - Chemical Physics",
-      "cat": "physics.chem-ph"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "544",
-    "fields": {
-      "name": "Physics - Classical Physics",
-      "cat": "physics.class-ph"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "545",
-    "fields": {
-      "name": "Physics - Computational Physics",
-      "cat": "physics.comp-ph"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "546",
-    "fields": {
-      "name": "Physics - Data Analysis; Statistics and Probability",
-      "cat": "physics.data-an"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "547",
-    "fields": {
-      "name": "Physics - Fluid Dynamics",
-      "cat": "physics.flu-dyn"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "548",
-    "fields": {
-      "name": "Physics - General Physics",
-      "cat": "physics.gen-ph"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "549",
-    "fields": {
-      "name": "Physics - Geophysics",
-      "cat": "physics.geo-ph"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "550",
-    "fields": {
-      "name": "Physics - History of Physics",
-      "cat": "physics.hist-ph"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "551",
-    "fields": {
-      "name": "Physics - Instrumentation and Detectors",
-      "cat": "physics.ins-det"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "552",
-    "fields": {
-      "name": "Physics - Medical Physics",
-      "cat": "physics.med-ph"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "553",
-    "fields": {
-      "name": "Physics - Optics",
-      "cat": "physics.optics"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "554",
-    "fields": {
-      "name": "Physics - Physics Education",
-      "cat": "physics.ed-ph"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "555",
-    "fields": {
-      "name": "Physics - Physics and Society",
-      "cat": "physics.soc-ph"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "556",
-    "fields": {
-      "name": "Physics - Plasma Physics",
-      "cat": "physics.plasm-ph"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "557",
-    "fields": {
-      "name": "Physics - Popular Physics",
-      "cat": "physics.pop-ph"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "558",
-    "fields": {
-      "name": "Physics - Space Physics",
-      "cat": "physics.space-ph"
-    }
-  },
-  {
-    "model": "arxiv.Subject",
-    "pk": "559",
-    "fields": {
-      "name": "Quantum Physics",
-      "cat": "quant-ph"
-    }
-  }
+{
+    "fields": {
+        "name": "Statistics - Applications",
+        "cat": "stat.AP"
+    },
+    "model": "arxiv.subject",
+    "pk": 1
+},
+{
+    "fields": {
+        "name": "Statistics - Computation",
+        "cat": "stat.CO"
+    },
+    "model": "arxiv.subject",
+    "pk": 2
+},
+{
+    "fields": {
+        "name": "Statistics - Machine Learning",
+        "cat": "stat.ML"
+    },
+    "model": "arxiv.subject",
+    "pk": 3
+},
+{
+    "fields": {
+        "name": "Statistics - Methodology",
+        "cat": "stat.ME"
+    },
+    "model": "arxiv.subject",
+    "pk": 4
+},
+{
+    "fields": {
+        "name": "Statistics - Theory",
+        "cat": "stat.TH"
+    },
+    "model": "arxiv.subject",
+    "pk": 5
+},
+{
+    "fields": {
+        "name": "Quantitative Biology - Biomolecules",
+        "cat": "q-bio.BM"
+    },
+    "model": "arxiv.subject",
+    "pk": 6
+},
+{
+    "fields": {
+        "name": "Quantitative Biology - Cell Behavior",
+        "cat": "q-bio.CB"
+    },
+    "model": "arxiv.subject",
+    "pk": 7
+},
+{
+    "fields": {
+        "name": "Quantitative Biology - Genomics",
+        "cat": "q-bio.GN"
+    },
+    "model": "arxiv.subject",
+    "pk": 8
+},
+{
+    "fields": {
+        "name": "Quantitative Biology - Molecular Networks",
+        "cat": "q-bio.MN"
+    },
+    "model": "arxiv.subject",
+    "pk": 9
+},
+{
+    "fields": {
+        "name": "Quantitative Biology - Neurons and Cognition",
+        "cat": "q-bio.NC"
+    },
+    "model": "arxiv.subject",
+    "pk": 10
+},
+{
+    "fields": {
+        "name": "Quantitative Biology - Other",
+        "cat": "q-bio.OT"
+    },
+    "model": "arxiv.subject",
+    "pk": 11
+},
+{
+    "fields": {
+        "name": "Quantitative Biology - Populations and Evolution",
+        "cat": "q-bio.PE"
+    },
+    "model": "arxiv.subject",
+    "pk": 12
+},
+{
+    "fields": {
+        "name": "Quantitative Biology - Quantitative Methods",
+        "cat": "q-bio.QM"
+    },
+    "model": "arxiv.subject",
+    "pk": 13
+},
+{
+    "fields": {
+        "name": "Quantitative Biology - Subcellular Processes",
+        "cat": "q-bio.SC"
+    },
+    "model": "arxiv.subject",
+    "pk": 14
+},
+{
+    "fields": {
+        "name": "Quantitative Biology - Tissues and Organs",
+        "cat": "q-bio.TO"
+    },
+    "model": "arxiv.subject",
+    "pk": 15
+},
+{
+    "fields": {
+        "name": "Computer Science - Architecture",
+        "cat": "cs.AR"
+    },
+    "model": "arxiv.subject",
+    "pk": 16
+},
+{
+    "fields": {
+        "name": "Computer Science - Artificial Intelligence",
+        "cat": "cs.AI"
+    },
+    "model": "arxiv.subject",
+    "pk": 17
+},
+{
+    "fields": {
+        "name": "Computer Science - Computation and Language",
+        "cat": "cs.CL"
+    },
+    "model": "arxiv.subject",
+    "pk": 18
+},
+{
+    "fields": {
+        "name": "Computer Science - Computational Complexity",
+        "cat": "cs.CC"
+    },
+    "model": "arxiv.subject",
+    "pk": 19
+},
+{
+    "fields": {
+        "name": "Computer Science - Computational Engineering; Finance; and Science",
+        "cat": "cs.CE"
+    },
+    "model": "arxiv.subject",
+    "pk": 20
+},
+{
+    "fields": {
+        "name": "Computer Science - Computational Geometry",
+        "cat": "cs.CG"
+    },
+    "model": "arxiv.subject",
+    "pk": 21
+},
+{
+    "fields": {
+        "name": "Computer Science - Computer Science and Game Theory",
+        "cat": "cs.GT"
+    },
+    "model": "arxiv.subject",
+    "pk": 22
+},
+{
+    "fields": {
+        "name": "Computer Science - Computer Vision and Pattern Recognition",
+        "cat": "cs.CV"
+    },
+    "model": "arxiv.subject",
+    "pk": 23
+},
+{
+    "fields": {
+        "name": "Computer Science - Computers and Society",
+        "cat": "cs.CY"
+    },
+    "model": "arxiv.subject",
+    "pk": 24
+},
+{
+    "fields": {
+        "name": "Computer Science - Cryptography and Security",
+        "cat": "cs.CR"
+    },
+    "model": "arxiv.subject",
+    "pk": 25
+},
+{
+    "fields": {
+        "name": "Computer Science - Data Structures and Algorithms",
+        "cat": "cs.DS"
+    },
+    "model": "arxiv.subject",
+    "pk": 26
+},
+{
+    "fields": {
+        "name": "Computer Science - Databases",
+        "cat": "cs.DB"
+    },
+    "model": "arxiv.subject",
+    "pk": 27
+},
+{
+    "fields": {
+        "name": "Computer Science - Digital Libraries",
+        "cat": "cs.DL"
+    },
+    "model": "arxiv.subject",
+    "pk": 28
+},
+{
+    "fields": {
+        "name": "Computer Science - Discrete Mathematics",
+        "cat": "cs.DM"
+    },
+    "model": "arxiv.subject",
+    "pk": 29
+},
+{
+    "fields": {
+        "name": "Computer Science - Distributed; Parallel; and Cluster Computing",
+        "cat": "cs.DC"
+    },
+    "model": "arxiv.subject",
+    "pk": 30
+},
+{
+    "fields": {
+        "name": "Computer Science - General Literature",
+        "cat": "cs.GL"
+    },
+    "model": "arxiv.subject",
+    "pk": 31
+},
+{
+    "fields": {
+        "name": "Computer Science - Graphics",
+        "cat": "cs.GR"
+    },
+    "model": "arxiv.subject",
+    "pk": 32
+},
+{
+    "fields": {
+        "name": "Computer Science - Human-Computer Interaction",
+        "cat": "cs.HC"
+    },
+    "model": "arxiv.subject",
+    "pk": 33
+},
+{
+    "fields": {
+        "name": "Computer Science - Information Retrieval",
+        "cat": "cs.IR"
+    },
+    "model": "arxiv.subject",
+    "pk": 34
+},
+{
+    "fields": {
+        "name": "Computer Science - Information Theory",
+        "cat": "cs.IT"
+    },
+    "model": "arxiv.subject",
+    "pk": 35
+},
+{
+    "fields": {
+        "name": "Computer Science - Learning",
+        "cat": "cs.LG"
+    },
+    "model": "arxiv.subject",
+    "pk": 36
+},
+{
+    "fields": {
+        "name": "Computer Science - Logic in Computer Science",
+        "cat": "cs.LO"
+    },
+    "model": "arxiv.subject",
+    "pk": 37
+},
+{
+    "fields": {
+        "name": "Computer Science - Mathematical Software",
+        "cat": "cs.MS"
+    },
+    "model": "arxiv.subject",
+    "pk": 38
+},
+{
+    "fields": {
+        "name": "Computer Science - Multiagent Systems",
+        "cat": "cs.MA"
+    },
+    "model": "arxiv.subject",
+    "pk": 39
+},
+{
+    "fields": {
+        "name": "Computer Science - Networking and Internet Architecture",
+        "cat": "cs.NI"
+    },
+    "model": "arxiv.subject",
+    "pk": 40
+},
+{
+    "fields": {
+        "name": "Computer Science - Neural and Evolutionary Computing",
+        "cat": "cs.NE"
+    },
+    "model": "arxiv.subject",
+    "pk": 41
+},
+{
+    "fields": {
+        "name": "Computer Science - Numerical Analysis",
+        "cat": "cs.NA"
+    },
+    "model": "arxiv.subject",
+    "pk": 42
+},
+{
+    "fields": {
+        "name": "Computer Science - Other",
+        "cat": "cs.OH"
+    },
+    "model": "arxiv.subject",
+    "pk": 43
+},
+{
+    "fields": {
+        "name": "Computer Science - Performance",
+        "cat": "cs.PF"
+    },
+    "model": "arxiv.subject",
+    "pk": 44
+},
+{
+    "fields": {
+        "name": "Computer Science - Programming Languages",
+        "cat": "cs.PL"
+    },
+    "model": "arxiv.subject",
+    "pk": 45
+},
+{
+    "fields": {
+        "name": "Computer Science - Robotics",
+        "cat": "cs.RO"
+    },
+    "model": "arxiv.subject",
+    "pk": 46
+},
+{
+    "fields": {
+        "name": "Computer Science - Sound",
+        "cat": "cs.SD"
+    },
+    "model": "arxiv.subject",
+    "pk": 47
+},
+{
+    "fields": {
+        "name": "Computer Science - Symbolic Computation",
+        "cat": "cs.SC"
+    },
+    "model": "arxiv.subject",
+    "pk": 48
+},
+{
+    "fields": {
+        "name": "Nonlinear Sciences - Adaptation and Self-Organizing Systems",
+        "cat": "nlin.AO"
+    },
+    "model": "arxiv.subject",
+    "pk": 49
+},
+{
+    "fields": {
+        "name": "Nonlinear Sciences - Cellular Automata and Lattice Gases",
+        "cat": "nlin.CG"
+    },
+    "model": "arxiv.subject",
+    "pk": 50
+},
+{
+    "fields": {
+        "name": "Nonlinear Sciences - Chaotic Dynamics",
+        "cat": "nlin.CD"
+    },
+    "model": "arxiv.subject",
+    "pk": 51
+},
+{
+    "fields": {
+        "name": "Nonlinear Sciences - Exactly Solvable and Integrable Systems",
+        "cat": "nlin.SI"
+    },
+    "model": "arxiv.subject",
+    "pk": 52
+},
+{
+    "fields": {
+        "name": "Nonlinear Sciences - Pattern Formation and Solitons",
+        "cat": "nlin.PS"
+    },
+    "model": "arxiv.subject",
+    "pk": 53
+},
+{
+    "fields": {
+        "name": "Mathematics - Algebraic Geometry",
+        "cat": "math.AG"
+    },
+    "model": "arxiv.subject",
+    "pk": 54
+},
+{
+    "fields": {
+        "name": "Mathematics - Algebraic Topology",
+        "cat": "math.AT"
+    },
+    "model": "arxiv.subject",
+    "pk": 55
+},
+{
+    "fields": {
+        "name": "Mathematics - Analysis of PDEs",
+        "cat": "math.AP"
+    },
+    "model": "arxiv.subject",
+    "pk": 56
+},
+{
+    "fields": {
+        "name": "Mathematics - Category Theory",
+        "cat": "math.CT"
+    },
+    "model": "arxiv.subject",
+    "pk": 57
+},
+{
+    "fields": {
+        "name": "Mathematics - Classical Analysis and ODEs",
+        "cat": "math.CA"
+    },
+    "model": "arxiv.subject",
+    "pk": 58
+},
+{
+    "fields": {
+        "name": "Mathematics - Combinatorics",
+        "cat": "math.CO"
+    },
+    "model": "arxiv.subject",
+    "pk": 59
+},
+{
+    "fields": {
+        "name": "Mathematics - Commutative Algebra",
+        "cat": "math.AC"
+    },
+    "model": "arxiv.subject",
+    "pk": 60
+},
+{
+    "fields": {
+        "name": "Mathematics - Complex Variables",
+        "cat": "math.CV"
+    },
+    "model": "arxiv.subject",
+    "pk": 61
+},
+{
+    "fields": {
+        "name": "Mathematics - Differential Geometry",
+        "cat": "math.DG"
+    },
+    "model": "arxiv.subject",
+    "pk": 62
+},
+{
+    "fields": {
+        "name": "Mathematics - Dynamical Systems",
+        "cat": "math.DS"
+    },
+    "model": "arxiv.subject",
+    "pk": 63
+},
+{
+    "fields": {
+        "name": "Mathematics - Functional Analysis",
+        "cat": "math.FA"
+    },
+    "model": "arxiv.subject",
+    "pk": 64
+},
+{
+    "fields": {
+        "name": "Mathematics - General Mathematics",
+        "cat": "math.GM"
+    },
+    "model": "arxiv.subject",
+    "pk": 65
+},
+{
+    "fields": {
+        "name": "Mathematics - General Topology",
+        "cat": "math.GN"
+    },
+    "model": "arxiv.subject",
+    "pk": 66
+},
+{
+    "fields": {
+        "name": "Mathematics - Geometric Topology",
+        "cat": "math.GT"
+    },
+    "model": "arxiv.subject",
+    "pk": 67
+},
+{
+    "fields": {
+        "name": "Mathematics - Group Theory",
+        "cat": "math.GR"
+    },
+    "model": "arxiv.subject",
+    "pk": 68
+},
+{
+    "fields": {
+        "name": "Mathematics - History and Overview",
+        "cat": "math.HO"
+    },
+    "model": "arxiv.subject",
+    "pk": 69
+},
+{
+    "fields": {
+        "name": "Mathematics - Information Theory",
+        "cat": "math.IT"
+    },
+    "model": "arxiv.subject",
+    "pk": 70
+},
+{
+    "fields": {
+        "name": "Mathematics - K-Theory and Homology",
+        "cat": "math.KT"
+    },
+    "model": "arxiv.subject",
+    "pk": 71
+},
+{
+    "fields": {
+        "name": "Mathematics - Logic",
+        "cat": "math.LO"
+    },
+    "model": "arxiv.subject",
+    "pk": 72
+},
+{
+    "fields": {
+        "name": "Mathematics - Mathematical Physics",
+        "cat": "math.MP"
+    },
+    "model": "arxiv.subject",
+    "pk": 73
+},
+{
+    "fields": {
+        "name": "Mathematics - Metric Geometry",
+        "cat": "math.MG"
+    },
+    "model": "arxiv.subject",
+    "pk": 74
+},
+{
+    "fields": {
+        "name": "Mathematics - Number Theory",
+        "cat": "math.NT"
+    },
+    "model": "arxiv.subject",
+    "pk": 75
+},
+{
+    "fields": {
+        "name": "Mathematics - Numerical Analysis",
+        "cat": "math.NA"
+    },
+    "model": "arxiv.subject",
+    "pk": 76
+},
+{
+    "fields": {
+        "name": "Mathematics - Operator Algebras",
+        "cat": "math.OA"
+    },
+    "model": "arxiv.subject",
+    "pk": 77
+},
+{
+    "fields": {
+        "name": "Mathematics - Optimization and Control",
+        "cat": "math.OC"
+    },
+    "model": "arxiv.subject",
+    "pk": 78
+},
+{
+    "fields": {
+        "name": "Mathematics - Probability",
+        "cat": "math.PR"
+    },
+    "model": "arxiv.subject",
+    "pk": 79
+},
+{
+    "fields": {
+        "name": "Mathematics - Quantum Algebra",
+        "cat": "math.QA"
+    },
+    "model": "arxiv.subject",
+    "pk": 80
+},
+{
+    "fields": {
+        "name": "Mathematics - Representation Theory",
+        "cat": "math.RT"
+    },
+    "model": "arxiv.subject",
+    "pk": 81
+},
+{
+    "fields": {
+        "name": "Mathematics - Rings and Algebras",
+        "cat": "math.RA"
+    },
+    "model": "arxiv.subject",
+    "pk": 82
+},
+{
+    "fields": {
+        "name": "Mathematics - Spectral Theory",
+        "cat": "math.SP"
+    },
+    "model": "arxiv.subject",
+    "pk": 83
+},
+{
+    "fields": {
+        "name": "Mathematics - Statistics",
+        "cat": "math.ST"
+    },
+    "model": "arxiv.subject",
+    "pk": 84
+},
+{
+    "fields": {
+        "name": "Mathematics - Symplectic Geometry",
+        "cat": "math.SG"
+    },
+    "model": "arxiv.subject",
+    "pk": 85
+},
+{
+    "fields": {
+        "name": "Astrophysics",
+        "cat": "astro-ph"
+    },
+    "model": "arxiv.subject",
+    "pk": 86
+},
+{
+    "fields": {
+        "name": "Physics - Disordered Systems and Neural Networks",
+        "cat": "cond-mat.dis-nn"
+    },
+    "model": "arxiv.subject",
+    "pk": 87
+},
+{
+    "fields": {
+        "name": "Physics - Mesoscopic Systems and Quantum Hall Effect",
+        "cat": "cond-mat.mes-hall"
+    },
+    "model": "arxiv.subject",
+    "pk": 88
+},
+{
+    "fields": {
+        "name": "Physics - Materials Science",
+        "cat": "cond-mat.mtrl-sci"
+    },
+    "model": "arxiv.subject",
+    "pk": 89
+},
+{
+    "fields": {
+        "name": "Physics - Other",
+        "cat": "cond-mat.other"
+    },
+    "model": "arxiv.subject",
+    "pk": 90
+},
+{
+    "fields": {
+        "name": "Physics - Soft Condensed Matter",
+        "cat": "cond-mat.soft"
+    },
+    "model": "arxiv.subject",
+    "pk": 91
+},
+{
+    "fields": {
+        "name": "Physics - Statistical Mechanics",
+        "cat": "cond-mat.stat-mech"
+    },
+    "model": "arxiv.subject",
+    "pk": 92
+},
+{
+    "fields": {
+        "name": "Physics - Strongly Correlated Electrons",
+        "cat": "cond-mat.str-el"
+    },
+    "model": "arxiv.subject",
+    "pk": 93
+},
+{
+    "fields": {
+        "name": "Physics - Superconductivity",
+        "cat": "cond-mat.supr-con"
+    },
+    "model": "arxiv.subject",
+    "pk": 94
+},
+{
+    "fields": {
+        "name": "General Relativity and Quantum Cosmology",
+        "cat": "gr-qc"
+    },
+    "model": "arxiv.subject",
+    "pk": 95
+},
+{
+    "fields": {
+        "name": "High Energy Physics - Experiment",
+        "cat": "hep-ex"
+    },
+    "model": "arxiv.subject",
+    "pk": 96
+},
+{
+    "fields": {
+        "name": "High Energy Physics - Lattice",
+        "cat": "hep-lat"
+    },
+    "model": "arxiv.subject",
+    "pk": 97
+},
+{
+    "fields": {
+        "name": "High Energy Physics - Phenomenology",
+        "cat": "hep-ph"
+    },
+    "model": "arxiv.subject",
+    "pk": 98
+},
+{
+    "fields": {
+        "name": "High Energy Physics - Theory",
+        "cat": "hep-th"
+    },
+    "model": "arxiv.subject",
+    "pk": 99
+},
+{
+    "fields": {
+        "name": "Mathematical Physics",
+        "cat": "math-ph"
+    },
+    "model": "arxiv.subject",
+    "pk": 100
+},
+{
+    "fields": {
+        "name": "Nuclear Experiment",
+        "cat": "nucl-ex"
+    },
+    "model": "arxiv.subject",
+    "pk": 101
+},
+{
+    "fields": {
+        "name": "Nuclear Theory",
+        "cat": "nucl-th"
+    },
+    "model": "arxiv.subject",
+    "pk": 102
+},
+{
+    "fields": {
+        "name": "Physics - Accelerator Physics",
+        "cat": "physics.acc-ph"
+    },
+    "model": "arxiv.subject",
+    "pk": 103
+},
+{
+    "fields": {
+        "name": "Physics - Atmospheric and Oceanic Physics",
+        "cat": "physics.ao-ph"
+    },
+    "model": "arxiv.subject",
+    "pk": 104
+},
+{
+    "fields": {
+        "name": "Physics - Atomic Physics",
+        "cat": "physics.atom-ph"
+    },
+    "model": "arxiv.subject",
+    "pk": 105
+},
+{
+    "fields": {
+        "name": "Physics - Atomic and Molecular Clusters",
+        "cat": "physics.atm-clus"
+    },
+    "model": "arxiv.subject",
+    "pk": 106
+},
+{
+    "fields": {
+        "name": "Physics - Biological Physics",
+        "cat": "physics.bio-ph"
+    },
+    "model": "arxiv.subject",
+    "pk": 107
+},
+{
+    "fields": {
+        "name": "Physics - Chemical Physics",
+        "cat": "physics.chem-ph"
+    },
+    "model": "arxiv.subject",
+    "pk": 108
+},
+{
+    "fields": {
+        "name": "Physics - Classical Physics",
+        "cat": "physics.class-ph"
+    },
+    "model": "arxiv.subject",
+    "pk": 109
+},
+{
+    "fields": {
+        "name": "Physics - Computational Physics",
+        "cat": "physics.comp-ph"
+    },
+    "model": "arxiv.subject",
+    "pk": 110
+},
+{
+    "fields": {
+        "name": "Physics - Data Analysis; Statistics and Probability",
+        "cat": "physics.data-an"
+    },
+    "model": "arxiv.subject",
+    "pk": 111
+},
+{
+    "fields": {
+        "name": "Physics - Fluid Dynamics",
+        "cat": "physics.flu-dyn"
+    },
+    "model": "arxiv.subject",
+    "pk": 112
+},
+{
+    "fields": {
+        "name": "Physics - General Physics",
+        "cat": "physics.gen-ph"
+    },
+    "model": "arxiv.subject",
+    "pk": 113
+},
+{
+    "fields": {
+        "name": "Physics - Geophysics",
+        "cat": "physics.geo-ph"
+    },
+    "model": "arxiv.subject",
+    "pk": 114
+},
+{
+    "fields": {
+        "name": "Physics - History of Physics",
+        "cat": "physics.hist-ph"
+    },
+    "model": "arxiv.subject",
+    "pk": 115
+},
+{
+    "fields": {
+        "name": "Physics - Instrumentation and Detectors",
+        "cat": "physics.ins-det"
+    },
+    "model": "arxiv.subject",
+    "pk": 116
+},
+{
+    "fields": {
+        "name": "Physics - Medical Physics",
+        "cat": "physics.med-ph"
+    },
+    "model": "arxiv.subject",
+    "pk": 117
+},
+{
+    "fields": {
+        "name": "Physics - Optics",
+        "cat": "physics.optics"
+    },
+    "model": "arxiv.subject",
+    "pk": 118
+},
+{
+    "fields": {
+        "name": "Physics - Physics Education",
+        "cat": "physics.ed-ph"
+    },
+    "model": "arxiv.subject",
+    "pk": 119
+},
+{
+    "fields": {
+        "name": "Physics - Physics and Society",
+        "cat": "physics.soc-ph"
+    },
+    "model": "arxiv.subject",
+    "pk": 120
+},
+{
+    "fields": {
+        "name": "Physics - Plasma Physics",
+        "cat": "physics.plasm-ph"
+    },
+    "model": "arxiv.subject",
+    "pk": 121
+},
+{
+    "fields": {
+        "name": "Physics - Popular Physics",
+        "cat": "physics.pop-ph"
+    },
+    "model": "arxiv.subject",
+    "pk": 122
+},
+{
+    "fields": {
+        "name": "Physics - Space Physics",
+        "cat": "physics.space-ph"
+    },
+    "model": "arxiv.subject",
+    "pk": 123
+},
+{
+    "fields": {
+        "name": "Quantum Physics",
+        "cat": "quant-ph"
+    },
+    "model": "arxiv.subject",
+    "pk": 124
+}
 ]

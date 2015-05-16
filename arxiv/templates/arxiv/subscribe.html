@@ -28,3 +28,12 @@
     </div>
 </div>
 {% endblock %}
+
+{% block foot_js %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstimezonedetect/1.0.4/jstz.min.js"></script>
+<script>
+    var timezone = jstz.determine();
+    var select = document.getElementById('id_timezone')
+    select.value = timezone.name();
+</script>
+{% endblock %}

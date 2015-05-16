@@ -27,16 +27,6 @@ class Migration(migrations.Migration):
             bases=(models.Model,),
         ),
         migrations.CreateModel(
-            name='Timezone',
-            fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('region', models.CharField(max_length=64, verbose_name=b'Region')),
-            ],
-            options={
-            },
-            bases=(models.Model,),
-        ),
-        migrations.CreateModel(
             name='Subject',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
@@ -53,7 +43,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('email', models.EmailField(max_length=128, verbose_name=b'Email Address')),
                 ('uuid', models.CharField(verbose_name=b'Universal Identifier', max_length=32, editable=False, blank=True)),
-                ('timezone', models.ForeignKey(to='arxiv.Timezone')),
+                ('timezone', models.CharField(max_length=64, verbose_name=b'Timezone')),
                 ('subjects', models.ManyToManyField(to='arxiv.Subject')),
             ],
             options={
