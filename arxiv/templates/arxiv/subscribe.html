@@ -29,14 +29,18 @@
 </div>
 {% endblock %}
 
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'arxiv/css/chosen.css' %}">
+{% endblock css %}
+
 {% block foot_js %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.4.2/chosen.jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jstimezonedetect/1.0.4/jstz.min.js"></script>
 <script>
     var timezone = jstz.determine();
-    $('#id_timezone').val(timezone.name());
-    $('#id_subjects').attr('data-placeholder', ' ');
-    $('#id_subjects').chosen();
+    $("#id_timezone").val(timezone.name());
+    $("#id_subjects").attr("data-placeholder", " ");
+    $("#id_subjects").chosen({width: ""});
 </script>
 {% endblock %}
