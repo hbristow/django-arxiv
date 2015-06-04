@@ -15,7 +15,7 @@ setup(
         'arxiv'
     ],
     include_package_data = True,
-    setup_requires = [
+    install_requires = [
         'django >= 1.7',
         'django-solo',
         'celery',
