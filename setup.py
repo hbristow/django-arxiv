@@ -16,8 +16,10 @@ setup(
     install_requires=[
         'django >= 1.7',
         'django-solo',
+        'xmltodict',
         'celery',
-        'pytz'
+        'pytz',
+        'six',
     ],
     classifiers=[
         'Environment :: Web Environment',
