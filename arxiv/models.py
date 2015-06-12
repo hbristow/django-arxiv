@@ -10,7 +10,8 @@ from django.db import models
 # ----------------------------------------------------------------------------
 class MailServer(SingletonModel):
     """App configuration model"""
-    email = models.EmailField('Email Address', max_length=128)
+    name  = models.CharField('From Name', max_length=128)
+    email = models.EmailField('From Address', max_length=128)
     host  = models.CharField('SMTP Hostname', max_length=64)
     port  = models.IntegerField('Port Number', default=25)
     username = models.CharField('Username', max_length=64)
@@ -30,8 +31,9 @@ class MailServer(SingletonModel):
 
     def send_mail(self, subject, message, recipients, **kwargs):
         """Send email from the mail server. See django.core.mail.send_mail"""
-        return mail.send_mail(subject, '', self.email, recipients,
-            html_message=message, connection=self.get_connection(),
+        return mail.send_mail(subject, '',
+            '"{name}" <{email}>'.format(name=self.name, email=self.email),
+            recipients, html_message=message, connection=self.get_connection(),
             **kwargs)
 
 

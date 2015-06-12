@@ -8,8 +8,11 @@ from arxiv import models
 class MailServerForm(forms.ModelForm):
     class Meta:
         model = models.MailServer
-        fields = ('email', 'host', 'port', 'username', 'password', 'tls', 'ssl')
-        widgets = {'password': forms.PasswordInput(render_value=True)}
+        if settings.EMAIL_BACKEND == 'django.core.mail.backends.smtp.EmailBackend':
+            fields = ('name', 'email', 'host', 'port', 'username', 'password', 'tls', 'ssl')
+            widgets = {'password': forms.PasswordInput(render_value=True)}
+        else:
+            fields = ('name', 'email')
 
     def clean(self):
         fields = super(MailServerForm, self).clean()
@@ -25,5 +28,4 @@ class MailServerAdmin(SingletonModelAdmin):
 # Only make MailServer visible
 #   - Subjects and Timezones are not editable
 #   - Subscribers are private
-if settings.EMAIL_BACKEND == 'django.core.mail.backends.smtp.EmailBackend':
-    admin.site.register(models.MailServer, MailServerAdmin)
+admin.site.register(models.MailServer, MailServerAdmin)
