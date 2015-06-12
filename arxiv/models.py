@@ -22,7 +22,8 @@ class MailServer(SingletonModel):
         verbose_name = 'Mail Server Configuration'
 
     def get_connection(self):
-        return smtp.EmailBackend(
+        return mail.get_connection(
+            # backend=settings.EMAIL_BACKEND,
             host=self.host, port=self.port,
             username=self.username, password=self.password,
             use_tls=self.tls, use_ssl=self.ssl)

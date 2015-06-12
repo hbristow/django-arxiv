@@ -1,4 +1,5 @@
 from django import forms
+from django.conf import settings
 from django.contrib import admin
 from solo.admin import SingletonModelAdmin
 
@@ -24,4 +25,5 @@ class MailServerAdmin(SingletonModelAdmin):
 # Only make MailServer visible
 #   - Subjects and Timezones are not editable
 #   - Subscribers are private
-admin.site.register(models.MailServer, MailServerAdmin)
+if settings.EMAIL_BACKEND == 'django.core.mail.backends.smtp.EmailBackend':
+    admin.site.register(models.MailServer, MailServerAdmin)
