@@ -9,10 +9,10 @@ class MailServerForm(forms.ModelForm):
     class Meta:
         model = models.MailServer
         if settings.EMAIL_BACKEND == 'django.core.mail.backends.smtp.EmailBackend':
-            fields = ('name', 'email', 'host', 'port', 'username', 'password', 'tls', 'ssl')
+            fields = ('domain', 'name', 'email', 'host', 'port', 'username', 'password', 'tls', 'ssl')
             widgets = {'password': forms.PasswordInput(render_value=True)}
         else:
-            fields = ('name', 'email')
+            fields = ('domain', 'name', 'email')
 
     def clean(self):
         fields = super(MailServerForm, self).clean()

@@ -46,6 +46,7 @@ def email_subscribers():
         for subscriber in subscribers:
             rendered = template.render(Context({
                 'feed': articles,
-                'subscriber': subscriber
+                'subscriber': subscriber,
+                'domain': mail_server.domain,
             }))
             mail_server.send_mail('arXiv Feed', rendered, [subscriber.email])

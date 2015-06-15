@@ -4,7 +4,7 @@
 <div class="feed container">
     <h1 class="center arxiv">
         {% if subscriber %}
-        <a href="/arxiv/latest/?uuid={{ subscriber.uuid }}">ar<span>X</span>iv</a>
+        <a href="{{ domain }}{% url 'latest' %}?uuid={{ subscriber.uuid }}">ar<span>X</span>iv</a>
         {% else %}
         <a href="http://arxiv.org">ar<span>X</span>iv</a>
         {% endif %}

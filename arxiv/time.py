@@ -34,7 +34,6 @@ def satisfies(query, **kwargs):
     predicates = itertools.product(*kwargs.values())
 
     for values in predicates:
-        print values
         if all([formatters[attr]() == value for attr,value in zip(attributes,values)]):
             return True
     return False
