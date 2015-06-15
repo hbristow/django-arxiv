@@ -10,7 +10,7 @@ from django.db import models
 # ----------------------------------------------------------------------------
 class MailServer(SingletonModel):
     """App configuration model"""
-    domain = models.URLField('Site Domain', max_length=128)
+    domain = models.URLField('Domain Name', max_length=128)
     name  = models.CharField('From Name', max_length=128)
     email = models.EmailField('From Address', max_length=128)
     host  = models.CharField('SMTP Hostname', max_length=64)
