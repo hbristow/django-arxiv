@@ -21,12 +21,12 @@ def subscribe(request):
 def unsubscribe(request):
     """Unsubscribe the user from the service"""
     uuid = request.GET.get('uuid', '')
-    subscriber = models.Subscriber.objects.filter(uuid=uuid)
-    if subscriber:
-        email = subscriber[0].email
+    try:
+        subscriber = models.Subscriber.objects.get(uuid=uuid)
+        email = subscriber.email
         message = '{email} was unsubscribed successfully'.format(email=email)
-        subscriber[0].delete()
-    else:
+        subscriber.delete()
+    except models.Subscriber.DoesNotExist:
         message = 'There are no subscribers with that identifier'
     return render(request, 'arxiv/message.html', {'message': message})
 
@@ -37,20 +37,16 @@ def unsubscribe(request):
 def latest(request):
     """Render the latest submissions in the given subject areas"""
     query = request.GET
-    subjects = query.get('subjects')
     try:
-        uuid = query['uuid']
+        uuid = query.get('uuid')
         subscriber = models.Subscriber.objects.get(uuid=uuid)
-    except:
-        subscriber = None
-
-    # determine the subjects for the query
-    if subjects:
-        subjects = subjects.split(',')
-    elif subscriber:
         subjects = subscriber.values_list('subjects__cat', flat=True)
-    else:
-        subjects = models.Subject.objects.all().values_list('cat', flat=True)
+    except models.Subscriber.DoesNotExist:
+        subjects = query.get('subjects')
+        if subjects:
+            subjects = subjects.split(',')
+        else:
+            subjects = models.Subject.objects.all().values_list('cat', flat=True)
 
     # render the feed
     return render(request, 'arxiv/email.html', {
