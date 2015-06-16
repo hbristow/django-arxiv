@@ -34,8 +34,7 @@ form select {
     display: -webkit-flex;
     display: flex; }
 .block-center {
-    height: 100%;
-    margin-top: -20px;
+    min-height: 100%;
     -webkit-box-align-items: center;
     -moz-box-align-items: center;
     -ms-flex-align-items: center;
