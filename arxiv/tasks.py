@@ -19,7 +19,6 @@ CELERYBEAT_SCHEDULE = {
 @celery.task
 def email_subscribers():
     """Email subscribers with a daily digest of their subject areas"""
-    mail_server = models.MailServer.get_solo()
 
     # get the timezones which need updating
     timezones = models.Subscriber.objects.values_list('timezone', flat=True).distinct()
@@ -40,13 +39,22 @@ def email_subscribers():
 
     # fetch all unique combinations of subjects and email the subscribers
     for subjects, subscribers in combinations.iteritems():
-        articles = feed.today(*subjects)
-        template = get_template('arxiv/email.inlined.html')
-
         for subscriber in subscribers:
-            rendered = template.render(Context({
-                'feed': articles,
-                'subscriber': subscriber,
-                'domain': mail_server.domain,
-            }))
-            mail_server.send_mail('arXiv Feed', rendered, [subscriber.email])
+            email_feed(subscriber)
+
+
+@celery.task
+def email_feed(subscriber):
+    """Email a recipient with the given subjects"""
+    mail_server = models.MailServer.get_solo()
+
+    subjects = subscriber.subjects.all().values_list('cat', flat=True)
+    articles = feed.today(*subjects)
+    template = get_template('arxiv/email.inlined.html')
+    rendered = template.render(Context({
+        'feed': articles,
+        'subscriber': subscriber,
+        'domain': mail_server.domain,
+    }))
+
+    mail_server.send_mail('arXiv Feed', rendered, [subscriber.email])

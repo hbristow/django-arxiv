@@ -61,7 +61,7 @@ font-family: 'Raleway'; font-style: normal; font-weight: 600; src: local('Ralewa
     <div style="border-top-color: rgb(238,238,238); border-top-style: solid; border-top-width: 1px; padding: 10px">
 
         <!-- Summary -->
-        <input id="ac-{{ forloop.counter }}" type="checkbox" checked="checked" style="display: none; position: absolute" />
+        <input id="ac-{{ forloop.counter }}" type="checkbox" checked="checked" style="display: none !important; position: absolute" />
         <label for="ac-{{ forloop.counter }}" style="display: block">
             <div style="float: left; width: 85%">
                 <h5 style="font-size: 16px; font-weight: 400; line-height: 1.6; margin: 0"><a href="{{card.url}}" style="color: black; text-decoration: none">{{card.title}}</a></h5>

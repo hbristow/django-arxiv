@@ -95,7 +95,7 @@ input:focus, select:focus {
     background: rgb(245,245,245); }
 .card input {
     position: absolute;
-    display: none; }
+    display: none !important; }
 .card label {
     display: block; }
 .comment, .unsubscribe {
