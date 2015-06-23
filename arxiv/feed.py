@@ -2,6 +2,8 @@ from six.moves import urllib
 from datetime import datetime, timedelta
 import xmltodict
 
+from arxiv import decorator
+
 ARXIV_API     = 'http://export.arxiv.org/api/'
 ARXIV_QUERY   = 'query?search_query=%28{subjects}%29+AND+submittedDate:[{begin_date}+TO+{end_date}]&start=0&max_results=100'
 ARXIV_OR      = '+OR+'
@@ -15,13 +17,14 @@ def request(begin_date, end_date, *subjects):
         end_date: The end window as a datetime object
         *subjects: The arXiv subjects (eg 'cs.CV')
     """
-    begin_date = begin_date.strftime('%Y%m%d%H%M%S')
-    end_date = end_date.strftime('%Y%m%d%H%M%S')
+    begin_date = begin_date.strftime('%Y%m%d%H%M00')
+    end_date = end_date.strftime('%Y%m%d%H%M00')
     subjects = ARXIV_OR.join(ARXIV_SUBJECT.format(subject) for subject in subjects)
 
     # build the query
     return ARXIV_API+ARXIV_QUERY.format(subjects=subjects, begin_date=begin_date, end_date=end_date)
 
+@decorator.cached
 def fetch(request):
     """Fetch the given request and return a dictionary"""
     raw  = urllib.request.urlopen(request)
@@ -51,7 +54,7 @@ def today(*subjects):
         *subjects: The arXiv subjects (eg 'cs.CV')
     """
     end_date = datetime.today()
-    begin_date = end_date - timedelta(days=3)
+    begin_date = end_date - timedelta(days=1)
     feed = fetch(request(begin_date, end_date, *subjects))
     feed = [sanitize(entry) for entry in fetch(request(begin_date, end_date, *subjects))]
     return sorted(feed, key=lambda entry: entry['published'], reverse=True)

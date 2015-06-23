@@ -8,10 +8,10 @@ import collections
 from arxiv import feed, models, time
 
 CELERYBEAT_SCHEDULE = {
-    # Executes on weekdays every 30 minutes (timezones are spaced 30 minutes apart)
+    # Executes on weekdays every 15 minutes (timezones are spaced 15 minutes apart)
     'email-subscribers': {
         'task': 'arxiv.tasks.email_subscribers',
-        'schedule': crontab(minute='*/1')
+        'schedule': crontab(minute='*/15')
     }
 }
 
@@ -31,16 +31,9 @@ def email_subscribers():
     # get all subscribers in the timezones that need notifying
     subscribers = models.Subscriber.objects.filter(timezone__in=timezones).prefetch_related('subjects')
 
-    # store the subscribers against the unique combinations of subjects
-    combinations = collections.defaultdict(list)
+    # notify those subscribers
     for subscriber in subscribers:
-        subjects = tuple(sorted(subscriber.subjects.all().values_list('cat', flat=True)))
-        combinations[subjects].append(subscriber)
-
-    # fetch all unique combinations of subjects and email the subscribers
-    for subjects, subscribers in combinations.iteritems():
-        for subscriber in subscribers:
-            email_feed(subscriber)
+        email_feed(subscriber)
 
 
 @celery.task
